@@ -1,0 +1,15 @@
+name = "mision-funcion1"
+main = "src/worker.js"
+compatibility_date = "2025-01-01"
+
+# Sitio estático (index.html, favicon, img/, _headers). Solo /api/* pasa primero por el Worker.
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+# Base de datos D1
+[[d1_databases]]
+binding = "DB"
+database_name = "mision-funcion-db"
+database_id = "471628f3-01fe-45a1-b602-e6f43b91e11d"   # lo imprime: npx wrangler d1 create mision-funcion-db

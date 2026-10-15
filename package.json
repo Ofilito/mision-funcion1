@@ -1,0 +1,12 @@
+{
+  "name": "mision-funcion1",
+  "private": true,
+  "scripts": {
+    "db:create": "wrangler d1 create mision-funcion-db",
+    "db:schema": "wrangler d1 execute mision-funcion-db --remote --file=schema.sql",
+    "secret": "wrangler secret put TEACHER_PASS",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": { "wrangler": "^4" }
+}

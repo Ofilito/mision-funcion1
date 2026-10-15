@@ -1,0 +1,2 @@
+# Copia a .dev.vars para probar en local con: npx wrangler dev
+TEACHER_PASS=Ofilio2026
